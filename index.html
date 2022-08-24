@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <script src="assets/bootstrap/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <style>
+                .borde{
+                border: 1px solid #ccc;
+                padding: 10px;
+                }
+                </style>
+            <title>Convertir HTML a PDF</title>
+</head>
+        <body class="">
+           
+
+            <div class="container-lg" style="min-height:900px;">
+                <div class="container-lg">
+                    <h3>Convertir HTML a PDF</h3>
+                    <hr/>
+                        <form name="foo" method="post" class="input-form" enctype="multipart/form-data">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Subir archivo</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group has-success">
+                                                <input type="file" id="fileUpload" name="file" class="form-control" accept=".html,.htm"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-18">
+                                                <div class="form-group has-success">
+                                                    <div class="preview hidden">
+                                                        <p><strong>Vista previa</strong></p>
+                                                        <hr/>
+                                                            <div id="previewHtmlContent"> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="row">
+                                                <div class="col-md-16 left">
+                                                    <input type="button" value="Mostrar Previsualización" class="btn btn-info" id="previewHtml"/>
+                                                        <span id="error-message" class="error"></span>
+                                                        <input type="button" value="Crear PDF" class="btn btn-info hidden" id="convertHtmlToPDF"/>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+                                    <script src="js/jspdf.umd.min.js"></script>
+                                    <script src="js/html2canvas.min.js"></script>
+                                    <script src="js/convertir.js"></script>
+            </div>
+</body>
+</html>
